@@ -16,3 +16,183 @@ Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode
 Response: {"status":"error","code":404,"message":"API request failed","raw_response":"The path could not be found [\/propertyapi\/v1\/property\/detail]."}
 
 Friday 25th of April 2025 12:12:05 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:18:59 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 12:18:59 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:19:01 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: {"status":"error","code":404,"message":"API request failed","raw_response":"The path could not be found [\/propertyapi\/v1\/property\/detail]."}
+
+Friday 25th of April 2025 12:19:01 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:19:16 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 12:19:16 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:19:17 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: {"status":"error","code":404,"message":"API request failed","raw_response":"The path could not be found [\/propertyapi\/v1\/property\/detail]."}
+
+Friday 25th of April 2025 12:19:17 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:44:40 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 12:44:40 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:44:41 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: {"status":"error","code":404,"message":"API request failed","raw_response":"{\"status\":\"Not found\"}","request_url":"https:\/\/api.developer.attomdata.com\/propertyapi\/v1\/property\/detail?attomId=123456789&fields=all&operation=properties&mode=detail"}
+
+Friday 25th of April 2025 12:44:41 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:45:23 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 12:45:23 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:45:24 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: {"status":"error","code":404,"message":"API request failed","raw_response":"{\"status\":\"Not found\"}","request_url":"https:\/\/api.developer.attomdata.com\/propertyapi\/v1\/property\/detail?attomId=123456789&fields=all&operation=properties&mode=detail"}
+
+Friday 25th of April 2025 12:45:24 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:50:50 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 12:50:50 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:50:51 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: {"status":"error","code":404,"message":"API request failed","raw_response":"{\"status\":\"Not found\"}","request_url":"https:\/\/api.developer.attomdata.com\/propertyapi\/v1\/property\/detail?attomId=123456789&fields=all&operation=properties&mode=detail"}
+
+Friday 25th of April 2025 12:50:51 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:53:03 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"184713191","fields":"all","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 12:53:03 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:53:04 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"184713191","fields":"all","operation":"properties","mode":"detail"}
+
+Response: {"status":"error","code":404,"message":"API request failed","raw_response":"{\"status\":\"Not found\"}","request_url":"https:\/\/api.developer.attomdata.com\/propertyapi\/v1\/property\/detail?attomId=184713191&fields=all&operation=properties&mode=detail"}
+
+Friday 25th of April 2025 12:53:04 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:53:06 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"184713191","fields":"all","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 12:53:06 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:53:07 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"184713191","fields":"all","operation":"properties","mode":"detail"}
+
+Response: {"status":"error","code":404,"message":"API request failed","raw_response":"{\"status\":\"Not found\"}","request_url":"https:\/\/api.developer.attomdata.com\/propertyapi\/v1\/property\/detail?attomId=184713191&fields=all&operation=properties&mode=detail"}
+
+Friday 25th of April 2025 12:53:07 PM
+
+*****************
+Date of call Friday 25th of April 2025 08:58:55 AM
+Endpoint: /property/Detail
+Parameters: {"attomId":"184713191","fields":"all","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 08:58:55 AM
+
+*****************
+Date of call Friday 25th of April 2025 08:58:57 AM
+Endpoint: /property/Detail
+Parameters: {"attomId":"184713191","fields":"all","operation":"properties","mode":"detail"}
+
+Response: {"status":"error","code":400,"message":"API request failed","raw_response":"{\"status\":{\"version\":\"\",\"code\":0,\"msg\":\"Invalid Parameter(s) in Request - FIELDS\",\"total\":0,\"responseDateTime\":\"2025-04-25T12:58:57.030Z\"}}","request_url":"https:\/\/api.gateway.attomdata.com\/propertyapi\/v1.0.0\/property\/detail?fields=all&attomid=184713191"}
+
+Friday 25th of April 2025 08:58:57 AM
+
+*****************
+Date of call Friday 25th of April 2025 08:59:08 AM
+Endpoint: /property/Detail
+Parameters: {"attomId":"184713191","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 08:59:08 AM
+
+*****************
+Date of call Friday 25th of April 2025 08:59:09 AM
+Endpoint: /property/Detail
+Parameters: {"attomId":"184713191","operation":"properties","mode":"detail"}
+
+Response: {"status":{"version":"1.0.0","code":0,"msg":"SuccessWithResult","total":1,"page":1,"pagesize":10,"responseDateTime":"2025-04-25T12:59:09.121Z","transactionID":"10aadbbfd07c4ef3c20eadca5f9f8406","attomId":184713191},"property":[{"identifier":{"Id":184713191,"fips":"08031","apn":"02192-04-018-000","attomId":184713191},"lot":{"lotnum":"31,32","lotsize1":0.1076676,"lotsize2":4690,"pooltype":"NO POOL"},"area":{"blockNum":"36","loctype":"VIEW - NONE","countrysecsubd":"Denver","countyuse1":"113  ","muncode":"DE","munname":"DENVER","srvyRange":"68W","srvySection":"19","srvyTownship":"03S","subdname":"BERKELEY","taxcodearea":"DENV"},"address":{"country":"US","countrySubd":"CO","line1":"4529 WINONA CT","line2":"DENVER, CO 80212","locality":"DENVER","matchCode":"ExaStr","oneLine":"4529 WINONA CT, DENVER, CO 80212","postal1":"80212","postal2":"2512","postal3":"C037"},"location":{"accuracy":"Rooftop","latitude":"39.778926","longitude":"-105.047775","distance":0,"geoid":"CO08031, CS0891007, DB0803360, ND0000119198, ND0004861239, PL0820000, SB0000076114, SB0000076155, SB0000076161, SB0000135819, SB0000143772, ZI80212","geoIdV4":{"CO":"1291dc1937525d78f89cebb6a43a50de","CS":"4c0507d0d7894d2d48e4e03e1c0240fc","DB":"d8ca7ea08abbe9efdd7e3b78f23d120e","N1":"b26d02d9330761156fc0cfd4ed8bf9a1","N2":"27e220314436f6edd5e606ddcd28156d","PL":"7de845f7ba9b234a2c5adfca1db76c64","SB":"9e0b497fb1337405c4dfe64e51568f68, 3b4cd5c56026e2e1f0e5c553b74cf05d, 93e5fef8956253c5642a335fc4a4395f, 3d0771574d56c6eae9184bc5aa3ebe19, 8a506b574561c5bab4f163492c7a386a","ZI":"0149d0a55ef2d6b71071a39f4e13d6eb"}},"summary":{"absenteeInd":"OWNER OCCUPIED","propclass":"Single Family Residence \/ Townhouse","propsubtype":"Residential","proptype":"SFR","propertyType":"SINGLE FAMILY RESIDENCE","yearbuilt":1900,"propLandUse":"SFR","propIndicator":"10","legal1":"BERKELEY B36 L31 & S\/2 OF L32 EXC REAR 8FT TO CITY"},"utilities":{"heatingfuel":"GAS","heatingtype":"CENTRAL"},"building":{"size":{"bldgsize":934,"grosssize":1414,"grosssizeadjusted":934,"groundfloorsize":934,"livingsize":934,"sizeInd":"LIVING SQFT","universalsize":934},"rooms":{"bathfixtures":5,"bathsfull":1,"bathstotal":1,"beds":2,"roomsTotal":5},"interior":{"bsmtsize":480,"fplccount":1,"fplcind":"Y","fplctype":"YES"},"construction":{"condition":"GOOD","wallType":"BRICK"},"parking":{"garagetype":"Garage, Detached","prkgSize":240,"prkgType":"Garage, Detached"},"summary":{"archStyle":"OTHER","levels":1,"quality":"EXCELLENT","unitsCount":"1","view":"VIEW - NONE","yearbuilteffective":2014}},"vintage":{"lastModified":"2025-03-18","pubDate":"2025-03-18"}}]}
+
+Friday 25th of April 2025 08:59:09 AM
+
+*****************
+Date of call Friday 25th of April 2025 09:26:24 AM
+Endpoint: /property/Detail
+Parameters: {"attomId":"184713191","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 09:26:24 AM
+
+*****************
+Date of call Friday 25th of April 2025 09:26:26 AM
+Endpoint: /property/Detail
+Parameters: {"attomId":"184713191","operation":"properties","mode":"detail"}
+
+Response: {"status":{"version":"1.0.0","code":0,"msg":"SuccessWithResult","total":1,"page":1,"pagesize":10,"responseDateTime":"2025-04-25T13:26:26.042Z","transactionID":"954ed571ebe1c3dcd0503165af273434","attomId":184713191},"property":[{"identifier":{"Id":184713191,"fips":"08031","apn":"02192-04-018-000","attomId":184713191},"lot":{"lotnum":"31,32","lotsize1":0.1076676,"lotsize2":4690,"pooltype":"NO POOL"},"area":{"blockNum":"36","loctype":"VIEW - NONE","countrysecsubd":"Denver","countyuse1":"113  ","muncode":"DE","munname":"DENVER","srvyRange":"68W","srvySection":"19","srvyTownship":"03S","subdname":"BERKELEY","taxcodearea":"DENV"},"address":{"country":"US","countrySubd":"CO","line1":"4529 WINONA CT","line2":"DENVER, CO 80212","locality":"DENVER","matchCode":"ExaStr","oneLine":"4529 WINONA CT, DENVER, CO 80212","postal1":"80212","postal2":"2512","postal3":"C037"},"location":{"accuracy":"Rooftop","latitude":"39.778926","longitude":"-105.047775","distance":0,"geoid":"CO08031, CS0891007, DB0803360, ND0000119198, ND0004861239, PL0820000, SB0000076114, SB0000076155, SB0000076161, SB0000135819, SB0000143772, ZI80212","geoIdV4":{"CO":"1291dc1937525d78f89cebb6a43a50de","CS":"4c0507d0d7894d2d48e4e03e1c0240fc","DB":"d8ca7ea08abbe9efdd7e3b78f23d120e","N1":"b26d02d9330761156fc0cfd4ed8bf9a1","N2":"27e220314436f6edd5e606ddcd28156d","PL":"7de845f7ba9b234a2c5adfca1db76c64","SB":"9e0b497fb1337405c4dfe64e51568f68, 3b4cd5c56026e2e1f0e5c553b74cf05d, 93e5fef8956253c5642a335fc4a4395f, 3d0771574d56c6eae9184bc5aa3ebe19, 8a506b574561c5bab4f163492c7a386a","ZI":"0149d0a55ef2d6b71071a39f4e13d6eb"}},"summary":{"absenteeInd":"OWNER OCCUPIED","propclass":"Single Family Residence \/ Townhouse","propsubtype":"Residential","proptype":"SFR","propertyType":"SINGLE FAMILY RESIDENCE","yearbuilt":1900,"propLandUse":"SFR","propIndicator":"10","legal1":"BERKELEY B36 L31 & S\/2 OF L32 EXC REAR 8FT TO CITY"},"utilities":{"heatingfuel":"GAS","heatingtype":"CENTRAL"},"building":{"size":{"bldgsize":934,"grosssize":1414,"grosssizeadjusted":934,"groundfloorsize":934,"livingsize":934,"sizeInd":"LIVING SQFT","universalsize":934},"rooms":{"bathfixtures":5,"bathsfull":1,"bathstotal":1,"beds":2,"roomsTotal":5},"interior":{"bsmtsize":480,"fplccount":1,"fplcind":"Y","fplctype":"YES"},"construction":{"condition":"GOOD","wallType":"BRICK"},"parking":{"garagetype":"Garage, Detached","prkgSize":240,"prkgType":"Garage, Detached"},"summary":{"archStyle":"OTHER","levels":1,"quality":"EXCELLENT","unitsCount":"1","view":"VIEW - NONE","yearbuilteffective":2014}},"vintage":{"lastModified":"2025-03-18","pubDate":"2025-03-18"}}]}
+
+Friday 25th of April 2025 09:26:26 AM

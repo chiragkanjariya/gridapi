@@ -15,34 +15,39 @@ class API {
     public function __construct() {
         // Define all ATTOM property API routes
         $this->routes = [
+            // Diagnostic endpoint
+            '/grid-api\/api\/diagnostic\/test\/?$/' => function ($params) {
+                return $this->handle(array_merge(['diagnostic', 'test'], $params));
+            },
+            
             // Legacy endpoint (maintained for backwards compatibility)
-            '/api\/property\/?$/' => function ($params) {
+            '/grid-api\/api\/property\/?$/' => function ($params) {
                 return $this->handle(array_merge(['properties', 'retrieve'], $params));
             },
             
             // New ATTOM Data API Endpoints
-            '/api\/property\/address\/?$/' => function ($params) {
+            '/grid-api\/api\/property\/address\/?$/' => function ($params) {
                 return $this->handle(array_merge(['properties', 'address'], $params));
             },
-            '/api\/property\/basicprofile\/?$/' => function ($params) {
+            '/grid-api\/api\/property\/basicprofile\/?$/' => function ($params) {
                 return $this->handle(array_merge(['properties', 'basicprofile'], $params));
             },
-            '/api\/property\/buildingpermits\/?$/' => function ($params) {
+            '/grid-api\/api\/property\/buildingpermits\/?$/' => function ($params) {
                 return $this->handle(array_merge(['properties', 'buildingpermits'], $params));
             },
-            '/api\/property\/detail\/?$/' => function ($params) {
+            '/grid-api\/api\/property\/detail\/?$/' => function ($params) {
                 return $this->handle(array_merge(['properties', 'detail'], $params));
             },
-            '/api\/property\/detailowner\/?$/' => function ($params) {
+            '/grid-api\/api\/property\/detailowner\/?$/' => function ($params) {
                 return $this->handle(array_merge(['properties', 'detailowner'], $params));
             },
-            '/api\/property\/expandedprofile\/?$/' => function ($params) {
+            '/grid-api\/api\/property\/expandedprofile\/?$/' => function ($params) {
                 return $this->handle(array_merge(['properties', 'expandedprofile'], $params));
             },
-            '/api\/property\/id\/?$/' => function ($params) {
+            '/grid-api\/api\/property\/id\/?$/' => function ($params) {
                 return $this->handle(array_merge(['properties', 'id'], $params));
             },
-            '/api\/property\/snapshot\/?$/' => function ($params) {
+            '/grid-api\/api\/property\/snapshot\/?$/' => function ($params) {
                 return $this->handle(array_merge(['properties', 'snapshot'], $params));
             }
         ];
@@ -69,8 +74,13 @@ class API {
      * @param string $requestUri The request URI path.
      */
     private function dispatch($requestUri) {
+        // Debug log
+        error_log("Dispatching request: " . $requestUri);
+        
         foreach ($this->routes as $pattern => $handler) {
+            error_log("Checking pattern: " . $pattern);
             if (preg_match($pattern, $requestUri, $matches)) {
+                error_log("Pattern matched: " . $pattern . " - Matches: " . json_encode($matches));
                 array_shift($matches);
                 $params = [];
                 if (!empty($matches)) {
@@ -80,10 +90,29 @@ class API {
                 return;
             }
         }
+        
+        // Additional pattern matching if previous patterns failed
+        if (strpos($requestUri, '/grid-api/api/property/') !== false) {
+            $parts = explode('/', $requestUri);
+            $endpoint = end($parts);
+            error_log("Fallback handling for endpoint: " . $endpoint);
+            $this->handle(['properties', $endpoint, []]);
+            return;
+        }
+        
+        // Check for diagnostic endpoint using fallback pattern
+        if (strpos($requestUri, '/grid-api/api/diagnostic/') !== false) {
+            $parts = explode('/', $requestUri);
+            $endpoint = end($parts);
+            error_log("Fallback handling for diagnostic endpoint: " . $endpoint);
+            $this->handle(['diagnostic', $endpoint, []]);
+            return;
+        }
+        
         http_response_code(404);
         echo json_encode(array(
             'status' => 'error',
-            'message' => 'Invalid endpoint',
+            'message' => 'Invalid endpoint: ' . $requestUri,
         ));
     }
 
@@ -100,7 +129,7 @@ class API {
         if (!$operation) {
             echo json_encode(array(
                 'status' => 'error',
-                'message' => 'Invalid endpoint',
+                'message' => 'Invalid endpoint operation: ' . $_REQUEST['operation'] . '::' . $_REQUEST['mode'],
             ));
             die;
         }
@@ -118,6 +147,9 @@ class API {
         } else {
             $requestData = array_merge($_REQUEST, $params, $_GET, $_POST);
         }
+        
+        // Debug log
+        error_log("Request data: " . json_encode($requestData));
         
         $this->controller::setCache($requestData);
         

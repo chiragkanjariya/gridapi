@@ -16,6 +16,7 @@ class properties extends APIController {
     private $attomService;
 
     public function __construct() {
+        parent::__construct();
         $this->attomService = AttomAPIService::getInstance();
     }
 
@@ -50,12 +51,30 @@ class properties extends APIController {
         $this->Logs($method, $data, null, '/property/' . $method);
         
         // Call the appropriate service method
-        $response = $this->attomService->{"getProperty" . ucfirst($method)}($data);
-        
-        // Log the response
-        $this->Logs($method, $data, $response, '/property/' . $method);
-        
-        return $response;
+        try {
+            $methodName = "getProperty" . ucfirst($method);
+            if (!method_exists($this->attomService, $methodName)) {
+                error_log("Method does not exist: " . $methodName);
+                return [
+                    'status' => 'error',
+                    'message' => 'API method not implemented: ' . $methodName
+                ];
+            }
+            
+            $response = $this->attomService->{$methodName}($data);
+            
+            // Log the response
+            $this->Logs($method, $data, $response, '/property/' . $method);
+            
+            return $response;
+        } catch (\Exception $e) {
+            error_log("Exception in processRequest: " . $e->getMessage());
+            return [
+                'status' => 'error',
+                'message' => $this->codes['API_ERROR'],
+                'detail' => $e->getMessage()
+            ];
+        }
     }
 
     /**
@@ -71,7 +90,7 @@ class properties extends APIController {
      * @return array
      */
     public function basicprofile() {
-        return $this->processRequest('BasicProfile', ['attomId']);
+        return $this->processRequest('Basicprofile', ['attomId']);
     }
     
     /**
@@ -79,7 +98,7 @@ class properties extends APIController {
      * @return array
      */
     public function buildingpermits() {
-        return $this->processRequest('BuildingPermits', ['attomId']);
+        return $this->processRequest('Buildingpermits', ['attomId']);
     }
     
     /**
@@ -95,7 +114,7 @@ class properties extends APIController {
      * @return array
      */
     public function detailowner() {
-        return $this->processRequest('DetailOwner', ['attomId']);
+        return $this->processRequest('Detailowner', ['attomId']);
     }
     
     /**
@@ -103,7 +122,7 @@ class properties extends APIController {
      * @return array
      */
     public function expandedprofile() {
-        return $this->processRequest('ExpandedProfile', ['attomId']);
+        return $this->processRequest('Expandedprofile', ['attomId']);
     }
     
     /**
