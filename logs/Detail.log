@@ -1,0 +1,18 @@
+
+*****************
+Date of call Friday 25th of April 2025 12:12:03 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: null
+
+Friday 25th of April 2025 12:12:03 PM
+
+*****************
+Date of call Friday 25th of April 2025 12:12:05 PM
+Endpoint: /property/Detail
+Parameters: {"attomId":"123456789","fields":"all","operation":"properties","mode":"detail"}
+
+Response: {"status":"error","code":404,"message":"API request failed","raw_response":"The path could not be found [\/propertyapi\/v1\/property\/detail]."}
+
+Friday 25th of April 2025 12:12:05 PM
